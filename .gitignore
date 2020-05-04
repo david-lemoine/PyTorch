@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+PyTorch_Getting_Started/data/cifar-10-batches-py/batches.meta
+PyTorch_Getting_Started/data/cifar-10-batches-py/data_batch_1
+PyTorch_Getting_Started/data/cifar-10-batches-py/data_batch_2
+PyTorch_Getting_Started/data/cifar-10-batches-py/data_batch_3
+PyTorch_Getting_Started/data/cifar-10-batches-py/data_batch_4
+PyTorch_Getting_Started/data/cifar-10-batches-py/data_batch_5
+PyTorch_Getting_Started/data/cifar-10-batches-py/readme.html
+PyTorch_Getting_Started/data/cifar-10-batches-py/test_batch
+PyTorch_Getting_Started/data/cifar-10-python.tar.gz
+PyTorch_Getting_Started/cifar_net.pth
