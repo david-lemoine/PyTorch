@@ -44,11 +44,11 @@ class Network(object):
         progress, but slows things down substantially."""
         if (test_data): n_test = len(test_data)
         n = len(training_data)
-        for j in xrange(epochs):
+        for j in range(epochs):
             random.shuffle(training_data)
             mini_batches = [
                 training_data[k:k+mini_batch_size]
-                for k in xrange(0, n, mini_batch_size)]
+                for k in range(0, n, mini_batch_size)]
             for mini_batch in mini_batches:
                 self.update_mini_batch(mini_batch, eta)
             if test_data:
@@ -97,7 +97,7 @@ class Network(object):
         # second-last layer, and so on.  It's a renumbering of the
         # scheme in the book, used here to take advantage of the fact
         # that Python can use negative indices in lists.
-        for l in xrange(2, self.num_layers):
+        for l in range(2, self.num_layers):
             z = zs[-l]
             sp = sigmoid_prime(z)
             delta = np.dot(self.weights[-l+1].transpose(), delta) * sp
@@ -132,7 +132,7 @@ def sigmoid_prime(z):
 training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
 
 # Setup a network with 30 hidden neurons
-net = network.Network([784, 30, 10])
+net = Network([784, 30, 10])
 
 # Use stochastic gradient descent to learn from the MNIST training_data over 30 epochs, 
 # with a mini-batch size of 10, and a learning rate of η=3.0
