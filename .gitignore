@@ -137,3 +137,6 @@ PyTorch_Getting_Started/data/cifar-10-batches-py/readme.html
 PyTorch_Getting_Started/data/cifar-10-batches-py/test_batch
 PyTorch_Getting_Started/data/cifar-10-python.tar.gz
 PyTorch_Getting_Started/cifar_net.pth
+
+# Data
+data/amazon_reviews/
